@@ -9,8 +9,8 @@ from pathlib import Path
 
 TASK_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = TASK_DIR.parents[1]
-DEFAULT_DATA_ROOT = PROJECT_ROOT / "03_实验运行代码" / "实验数据集" / "cifar10"
-DEFAULT_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "03_CIFAR-10数据集扩展"
+DEFAULT_DATA_ROOT = PROJECT_ROOT / "实验运行代码" / "实验数据集" / "cifar10"
+DEFAULT_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "CIFAR-10数据集扩展"
 
 
 def parse_args():

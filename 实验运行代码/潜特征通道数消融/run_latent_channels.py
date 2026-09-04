@@ -9,14 +9,14 @@ from pathlib import Path
 
 TASK_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = TASK_DIR.parents[1]
-TRAIN_SCRIPT = PROJECT_ROOT / "03_实验运行代码" / "02_数据划分与基线模型训练" / "train.py"
+TRAIN_SCRIPT = PROJECT_ROOT / "实验运行代码" / "数据划分与基线模型训练" / "train.py"
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="运行任务四的潜特征通道数实验")
-    parser.add_argument("--data-dir", default=str(PROJECT_ROOT / "03_实验运行代码" / "实验数据集" / "kodak"))
-    parser.add_argument("--output-dir", default=str(Path(tempfile.gettempdir()) / "deep-jscc-image" / "04_潜特征通道数消融"))
-    parser.add_argument("--split-file", default=str(Path(tempfile.gettempdir()) / "deep-jscc-image" / "02_数据划分与基线模型训练" / "data_split.json"))
+    parser.add_argument("--data-dir", default=str(PROJECT_ROOT / "实验运行代码" / "实验数据集" / "kodak"))
+    parser.add_argument("--output-dir", default=str(Path(tempfile.gettempdir()) / "deep-jscc-image" / "潜特征通道数消融"))
+    parser.add_argument("--split-file", default=str(Path(tempfile.gettempdir()) / "deep-jscc-image" / "数据划分与基线模型训练" / "data_split.json"))
     parser.add_argument(
         "--latent-channels",
         choices=[4, 8, 32],

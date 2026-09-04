@@ -14,8 +14,8 @@ from PIL import Image
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parents[1]
-DEFAULT_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "01_基础流程复现"
-DEFAULT_DATA_DIR = PROJECT_ROOT / "03_实验运行代码" / "实验数据集" / "kodak"
+DEFAULT_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "基础流程复现"
+DEFAULT_DATA_DIR = PROJECT_ROOT / "实验运行代码" / "实验数据集" / "kodak"
 TEST_SNRS = [-10, -5, 0, 5, 10]
 DEFAULT_VISUAL_SAMPLES = 3
 

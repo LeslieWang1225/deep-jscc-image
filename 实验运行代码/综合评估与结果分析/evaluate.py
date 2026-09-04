@@ -19,7 +19,7 @@ import sys
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parents[1]
-TASK2_CODE = PROJECT_ROOT / "03_实验运行代码" / "02_数据划分与基线模型训练"
+TASK2_CODE = PROJECT_ROOT / "实验运行代码" / "数据划分与基线模型训练"
 sys.path.insert(0, str(TASK2_CODE))
 
 from 公共模块.experiment_config import TEST_SNRS
@@ -27,8 +27,8 @@ from 公共模块.experiment_utils import load_or_create_split, resolve_device, 
 from train import KodakDataset, SemanticCommSystem
 
 
-DEFAULT_DATA_DIR = PROJECT_ROOT / "03_实验运行代码" / "实验数据集" / "kodak"
-TASK2_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "02_数据划分与基线模型训练"
+DEFAULT_DATA_DIR = PROJECT_ROOT / "实验运行代码" / "实验数据集" / "kodak"
+TASK2_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "数据划分与基线模型训练"
 
 
 def parse_args():

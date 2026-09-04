@@ -16,7 +16,7 @@ import sys
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parents[1]
-TASK2_CODE = PROJECT_ROOT / "03_实验运行代码" / "02_数据划分与基线模型训练"
+TASK2_CODE = PROJECT_ROOT / "实验运行代码" / "数据划分与基线模型训练"
 sys.path.insert(0, str(TASK2_CODE))
 
 from 公共模块.experiment_config import EXPERIMENTS
@@ -28,7 +28,7 @@ plt.rcParams["axes.unicode_minus"] = False
 
 
 DEFAULT_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image"
-DEFAULT_FIGURE_DIR = DEFAULT_OUTPUT_DIR / "06_综合评估与结果分析" / "结果图表"
+DEFAULT_FIGURE_DIR = DEFAULT_OUTPUT_DIR / "综合评估与结果分析" / "结果图表"
 
 
 def parse_args():

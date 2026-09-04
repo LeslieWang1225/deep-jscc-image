@@ -15,8 +15,8 @@ from torchvision import transforms
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_DATA_DIR = PROJECT_ROOT / "03_实验运行代码" / "实验数据集" / "kodak"
-DEFAULT_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "01_基础流程复现"
+DEFAULT_DATA_DIR = PROJECT_ROOT / "实验运行代码" / "实验数据集" / "kodak"
+DEFAULT_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "基础流程复现"
 TRAIN_SNRS = [-10, -5, 0, 5, 10]
 
 

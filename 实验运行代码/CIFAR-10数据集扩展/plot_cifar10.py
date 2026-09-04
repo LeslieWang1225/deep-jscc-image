@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 TASK_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = TASK_DIR.parents[1]
-DEFAULT_EXPERIMENT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "03_CIFAR-10数据集扩展" / "cifar10_random_snr"
+DEFAULT_EXPERIMENT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "CIFAR-10数据集扩展" / "cifar10_random_snr"
 
 
 plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "Arial Unicode MS"]

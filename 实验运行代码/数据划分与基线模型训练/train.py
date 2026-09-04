@@ -29,8 +29,8 @@ from 公共模块.experiment_utils import (
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_DATA_DIR = PROJECT_ROOT / "03_实验运行代码" / "实验数据集" / "kodak"
-DEFAULT_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "02_数据划分与基线模型训练"
+DEFAULT_DATA_DIR = PROJECT_ROOT / "实验运行代码" / "实验数据集" / "kodak"
+DEFAULT_OUTPUT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "数据划分与基线模型训练"
 
 
 class KodakDataset(Dataset):

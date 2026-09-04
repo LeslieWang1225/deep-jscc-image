@@ -12,8 +12,8 @@ from 公共模块.experiment_utils import load_or_create_split
 
 
 def main():
-    data_dir = PROJECT_ROOT / "03_实验运行代码" / "实验数据集" / "kodak"
-    split_file = Path(tempfile.gettempdir()) / "deep-jscc-image" / "02_数据划分与基线模型训练" / "data_split.json"
+    data_dir = PROJECT_ROOT / "实验运行代码" / "实验数据集" / "kodak"
+    split_file = Path(tempfile.gettempdir()) / "deep-jscc-image" / "数据划分与基线模型训练" / "data_split.json"
     split = load_or_create_split(data_dir, split_file, train_count=18, seed=42)
     print(f"训练集 {len(split['train'])} 张，测试集 {len(split['test'])} 张：{split_file}")
 

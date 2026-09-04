@@ -16,8 +16,8 @@ import sys
 
 TASK_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = TASK_DIR.parents[1]
-TASK2_CODE = PROJECT_ROOT / "03_实验运行代码" / "02_数据划分与基线模型训练"
-TASK6_CODE = PROJECT_ROOT / "03_实验运行代码" / "06_综合评估与结果分析"
+TASK2_CODE = PROJECT_ROOT / "实验运行代码" / "数据划分与基线模型训练"
+TASK6_CODE = PROJECT_ROOT / "实验运行代码" / "综合评估与结果分析"
 sys.path.insert(0, str(TASK2_CODE))
 sys.path.insert(0, str(TASK6_CODE))
 
@@ -27,8 +27,8 @@ from 公共模块.experiment_utils import resolve_device, save_json, set_seed
 from evaluate import calculate_lpips, calculate_metrics, snr_tag, tensor_to_image
 
 
-DEFAULT_DATA_ROOT = PROJECT_ROOT / "03_实验运行代码" / "实验数据集" / "cifar10"
-DEFAULT_EXPERIMENT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "03_CIFAR-10数据集扩展" / "cifar10_random_snr"
+DEFAULT_DATA_ROOT = PROJECT_ROOT / "实验运行代码" / "实验数据集" / "cifar10"
+DEFAULT_EXPERIMENT_DIR = Path(tempfile.gettempdir()) / "deep-jscc-image" / "CIFAR-10数据集扩展" / "cifar10_random_snr"
 
 
 def parse_args():

@@ -9,14 +9,14 @@ from pathlib import Path
 
 TASK_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = TASK_DIR.parents[1]
-TRAIN_SCRIPT = PROJECT_ROOT / "03_实验运行代码" / "02_数据划分与基线模型训练" / "train.py"
+TRAIN_SCRIPT = PROJECT_ROOT / "实验运行代码" / "数据划分与基线模型训练" / "train.py"
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="运行任务五的固定 SNR 鲁棒性实验")
-    parser.add_argument("--data-dir", default=str(PROJECT_ROOT / "03_实验运行代码" / "实验数据集" / "kodak"))
-    parser.add_argument("--output-dir", default=str(Path(tempfile.gettempdir()) / "deep-jscc-image" / "05_SNR训练策略对比"))
-    parser.add_argument("--split-file", default=str(Path(tempfile.gettempdir()) / "deep-jscc-image" / "02_数据划分与基线模型训练" / "data_split.json"))
+    parser.add_argument("--data-dir", default=str(PROJECT_ROOT / "实验运行代码" / "实验数据集" / "kodak"))
+    parser.add_argument("--output-dir", default=str(Path(tempfile.gettempdir()) / "deep-jscc-image" / "SNR训练策略对比"))
+    parser.add_argument("--split-file", default=str(Path(tempfile.gettempdir()) / "deep-jscc-image" / "数据划分与基线模型训练" / "data_split.json"))
     parser.add_argument("--experiment-name", default="fixed_snr_5", choices=["fixed_snr_5"])
     parser.add_argument("--latent-channels", type=int, default=16, choices=[16])
     parser.add_argument("--epochs", type=int, default=200)
