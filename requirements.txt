@@ -1,0 +1,8 @@
+# 按硬件环境安装匹配的 torch 与 torchvision，详见 README。
+torch
+torchvision
+numpy
+Pillow
+scipy
+matplotlib
+lpips
